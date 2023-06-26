@@ -1,0 +1,167 @@
+.banner {
+  height: 100vh;
+  width: 100%;
+  padding: 9rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/Reunion.jpeg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  background-color: #408080;
+}
+.banner div {
+  opacity: 1;
+  margin: 0vh;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+.tituloh1 {
+  display: flex;
+  font-size: 120px;
+  margin-bottom: 5vh;
+}
+
+.float {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.float:hover {
+  box-shadow: 0 3px 3px 0 #000000, 0 3px 3px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+  background-color: #4A5859;
+}
+
+.conText {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.botton {
+  background-color: #383A3F;
+  border-radius: 15px;
+  padding: 15px;
+  width: 25vh;
+  height: 7vh;
+  margin-top: 50px;
+  margin-left: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 20vh;
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+.logo {
+  margin: 0;
+  width: 10vh;
+}
+.logo img {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+}
+
+.footer {
+  background-color: #383A3F;
+  display: grid;
+  list-style: none;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 20px;
+}
+.footer .iconRedes {
+  justify-content: left;
+}
+.footer .redes {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .redes li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.footer .redes img {
+  width: 5vh;
+}
+.footer .copy {
+  width: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    overflow: hidden;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes {
+    margin: 0vh;
+    padding: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes li {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .copy {
+    text-align: center;
+    justify-content: center;
+    font-size: 5px;
+    width: 10vh;
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.csssass.map */
