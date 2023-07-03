@@ -1,8 +1,31 @@
-.foro {
-    height: 70vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    background-color: #E0E1DD;
-    padding: 5vh;
-    margin: 2vh;
-}
+.mainNoti{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        width: 90%;
+        background-color: #E0E1DD;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .foro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 66vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        background-color: #E0E1DD;
+        width: 90%;
+        padding: 10px;
+
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+} 

@@ -1,10 +1,16 @@
 .contMain{
     margin-top: 15vh;
+    h2{
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
     .formtEquipo{  
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-top: 20vh;
+        padding-top: 10vh;
         .textEquipo{
             display: flex;
             flex-direction: column;
@@ -95,26 +101,28 @@
         }
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 320px){
     .contMain{
-        *{
-            p{
-                font-size: 10px;
-            }
-            h2{
-                font-size: 20px;
-            }
-        }      
+        p{
+            font-size: 10px;
+        }
+        h2{
+            font-size: 20px;
+        }    
         .formtEquipo{  
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-top: 10vh;
             .textEquipo{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 p{
+                    width: 80%;
+                }
+                h2{
                     width: 80%;
                 }
             }

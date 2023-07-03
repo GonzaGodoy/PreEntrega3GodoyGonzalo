@@ -21,6 +21,9 @@ main{
 footer{
     height: 10vh;
 }
+.navMov{
+    display: none;
+}
 .logo{
     margin: 5rem;
     width: 10vh;
@@ -41,7 +44,7 @@ footer{
     top: 0;
     z-index: 2;
 }
-.navBar {
+.navDesk {
     ul{
         position: absolute;
         top: 50%;
@@ -142,20 +145,25 @@ footer{
         margin: 0vh;
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 320px){
     .navBarPos{
         padding: 0vh !important; 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        position: static;
         .logo{
-            padding-left: 2vh;
+            padding-left: 1vh;
         }
         .navRes{
             background-color: white;
         }
     }
-    .navBar{
+    .navDesk{
         display: none;
+    }
+    .navMov{
+        display:flex;
+        height: 10vh;         
     }
     .footer{
         overflow: hidden;

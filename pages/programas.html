@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400;1,500&display=swap" rel="stylesheet">
-    <!-- Boostrap  -->
+    <!-- Fiveicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/Favicon/favicon.ico">
+    <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- css main -->
     <link rel="stylesheet" href="../css/style.css">
@@ -19,36 +21,46 @@
 <body>
     <header class="navBarPos">
         <figure class="logo">
-                <img src="../img/LogoPng" alt="">
+                <img src="../img/LogoPng" alt="logo de dale">
             </figure>
-        <nav class="navBar">
+        <nav class="navDesk">
             <ul>
                 <li><a href="../index.html" class="itemNav "> Inicio </a></li>
-                <li><a href="./noticias.html" class="itemNav "> Noticias </a></li>
-                <li><a href="./nosotros.html" class="itemNav "> Nosotros </a></li>
-                <li><a href="./contacto.html" class="itemNav "> Contacto </a></li>
+                <li><a href="../pages/programas.html" class="itemNav "> Programas </a></li>
+                <li><a href="../pages/noticias.html" class="itemNav "> Noticias </a></li>
+                <li><a href="../pages/nosotros.html" class="itemNav "> Nosotros </a></li>
+                <li><a href="../pages/contacto.html" class="itemNav "> Contactanos </a></li>
             </ul>  
         </nav> 
-        <nav class="navRes navbar navbar-expand-lg navbar-white bg-white d-lg-none " justify-content="center">
+        <nav class="navMov navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../img/LogoPng" alt="logo de dale" width="80px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./noticias.html">Notocias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contactanos</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./programas.html">Programas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -60,7 +72,7 @@
                 <article>    
                     <a href="#ImpulsaJoven">
                         <div class="imageContainer">
-                            <img src="../img/Programa Juvenil.jpg" alt="Imagen" />
+                            <img src="../img/Programa Juvenil.jpg" alt="Imagen Programa ImpulsaJoven" />
                             <div class="title">ImpulsaJoven</div>
                             <div class="description">Capacitar y mentorizar, establecer alianzas y redes de emprendedores para generar empleo local y contribuir al desarrollo económico sostenible.</div>
                         </div>
@@ -69,7 +81,7 @@
                 <article>    
                     <a href="#TechInnova">
                         <div class="imageContainer">
-                            <img src="../img/Programa Tecnologico.jpeg" alt="Imagen" />
+                            <img src="../img/Programa Tecnologico.jpeg" alt="Imagen Programa TechInnova" />
                             <div class="title">TechInnova</div>
                             <div class="description">Impulsar la innovación y desarrollo tecnológico en Monte Cristo, generando empleo y desarrollo económico sostenible en la comunidad.</div>
                         </div>
@@ -78,7 +90,7 @@
                 <article>    
                     <a href="#MonteVerde">
                         <div class="imageContainer">
-                            <img src="../img/Programa Sustentables.jpg" alt="Imagen" />
+                            <img src="../img/Programa Sustentables.jpg" alt="Imagen Programa MonteVerde" />
                             <div class="title">MonteVerde</div>
                             <div class="description">Promover el desarrollo local sostenible, preservar los recursos naturales y mejorar la calidad de vida de la comunidad de Monte Cristo y sus alrededores.</div>
                         </div>
@@ -86,10 +98,31 @@
                 </article>
             </section>
         </div>
-        <div style="border-top: 2px solid black; margin-left: 10vh; margin-right: 10vh; margin-top: 10vh; margin-bottom: 10vh;"></div>
         <section class="textProg">
+            <div style="border-top: 2px solid black; margin-left: 10vh; margin-right: 10vh; margin-top: 10vh; margin-bottom: 10vh;" id="ImpulsaJoven"></div>
             <article class="formtText" >
-                <h2 id="TechInnova">Programa de Desarrollo Tecnológico "TechInnova":</h2>
+                <h2 >Programa de Emprendimiento Juvenil "ImpulsaJoven":</h2>
+                <p >Con el firme propósito de empoderar a los jóvenes emprendedores de Monte Cristo, la Oficina de Desarrollo lanza el programa ImpulsaJoven. Esta iniciativa se enfoca en brindar un amplio conjunto de recursos y oportunidades que impulsan el espíritu emprendedor y respaldan el desarrollo de proyectos empresariales liderados por jóvenes en la comunidad.
+
+                    ImpulsaJoven ofrece una variedad de talleres y capacitaciones altamente especializadas, diseñadas para equipar a los participantes con habilidades clave para el éxito empresarial. Los temas abordados incluyen planificación empresarial, estrategias de marketing, gestión financiera y liderazgo efectivo. Estas sesiones se adaptan a las necesidades específicas de los emprendedores jóvenes, brindándoles conocimientos y herramientas prácticas para enfrentar los desafíos del mundo empresarial.
+
+                    Además, el programa establece alianzas estratégicas con empresas y empresarios locales destacados, quienes se desempeñan como mentores dedicados. Estos mentores comparten su valiosa experiencia y conocimientos con los jóvenes emprendedores, brindándoles orientación personalizada y asesoramiento práctico en su trayectoria empresarial. Esta relación mentor-emprendedor promueve el crecimiento profesional y el desarrollo de habilidades clave, allanando el camino hacia el éxito empresarial.
+
+                    ImpulsaJoven también se enfoca en fomentar la creación de una sólida red de jóvenes emprendedores en Monte Cristo. Para lograrlo, se organizan encuentros regulares, eventos de networking y espacios de colaboración, donde los participantes pueden conectarse, intercambiar ideas y establecer relaciones comerciales mutuamente beneficiosas. Esta red de apoyo y colaboración impulsa la generación de empleo local y contribuye al crecimiento económico sostenible de la comunidad.
+
+                    Además, el programa se lleva a cabo a través de una serie de pasos clave que garantizan una experiencia integral para los participantes. En primer lugar, se inicia con una convocatoria abierta, ampliamente difundida en la comunidad de Monte Cristo y sus alrededores, para seleccionar a los jóvenes emprendedores con proyectos empresariales prometedores. Esta convocatoria puede incluir la presentación de una solicitud y un proceso de evaluación exhaustivo para identificar a aquellos emprendedores con ideas innovadoras, viabilidad comercial y potencial de crecimiento.
+
+                    Una vez seleccionados, los participantes ingresan a una fase de capacitación intensiva que abarca una amplia gama de aspectos empresariales fundamentales. Estas capacitaciones son diseñadas cuidadosamente para proporcionarles los conocimientos y las habilidades necesarias para desarrollar y gestionar sus proyectos de manera efectiva. Los talleres y sesiones de formación cubren temas como planificación estratégica, modelos de negocio, análisis de mercado, estrategias de marketing, gestión financiera, liderazgo y negociación, entre otros. Se cuenta con la participación de expertos y profesionales destacados en cada área, brindando a los emprendedores acceso a conocimientos de alto nivel y las mejores prácticas en el ámbito empresarial.
+
+                    Además, como parte fundamental del programa, se establecen alianzas estratégicas con mentores destacados que actúan como guías y asesores personales para los jóvenes emprendedores. Estos mentores, con amplia experiencia y conocimientos en el mundo empresarial, brindan orientación personalizada, comparten su experiencia y ofrecen consejos prácticos para ayudar a los emprendedores a superar desafíos y maximizar sus oportunidades de éxito. La relación mentor-emprendedor se nutre de reuniones regulares, intercambio de ideas y seguimiento constante, creando un ambiente de aprendizaje y crecimiento continuo.
+
+                    Finalmente, el programa impulsa la creación de una red sólida de jóvenes emprendedores a través de una variedad de encuentros y eventos de networking. Estos espacios brindan la oportunidad de conectarse con otros emprendedores, compartir experiencias, establecer colaboraciones estratégicas y abrir puertas a nuevas oportunidades comerciales. Se organizan conferencias, paneles de discusión, ferias empresariales y actividades de networking específicamente diseñadas para fomentar la interacción entre los participantes, promover el intercambio de conocimientos y facilitar la creación de alianzas comerciales mutuamente beneficiosas.
+
+                    En resumen, el programa ImpulsaJoven se implementa a través de una cuidadosa secuencia de pasos, que incluye una convocatoria selectiva, una capacitación integral, el apoyo de mentores experimentados y la creación de una red sólida de jóvenes emprendedores. Estos pasos garantizan que los participantes obtengan los conocimientos, las habilidades y las conexiones necesarias para llevar adelante sus proyectos empresariales con éxito, contribuyendo así al crecimiento económico y al desarrollo sostenible de Monte Cristo.</p>
+            </article>
+            <div style="border-top: 2px solid black; margin-left: 10vh; margin-right: 10vh; margin-top: 10vh; margin-bottom: 10vh;" id="TechInnova"></div>
+            <article class="formtText" >
+                <h2 >Programa de Desarrollo Tecnológico "TechInnova":</h2>
                 <p>
                     TechInnova es una iniciativa ambiciosa de la Oficina de Desarrollo de Monte Cristo que tiene como objetivo principal fomentar la innovación y el desarrollo tecnológico en la comunidad. El programa brinda un amplio conjunto de recursos y oportunidades diseñados específicamente para apoyar a startups y emprendimientos tecnológicos locales.
 
@@ -122,31 +155,10 @@
                     En resumen, para lograr el objetivo de posicionar a Monte Cristo como un polo de innovación tecnológica a través del programa TechInnova, es necesario realizar una investigación y análisis detallados, diseñar un programa integral que atienda las necesidades de los emprendedores y startups tecnológicas, implementar el programa de manera efectiva, promocionarlo ampliamente y realizar un seguimiento continuo para asegurar su éxito y adaptación a las necesidades cambiantes de la comunidad.
                 </p>
             </article>
-            <div style="border-top: 2px solid black; margin-left: 10vh; margin-right: 10vh; margin-top: 10vh; margin-bottom: 10vh;"></div>
+            <div style="border-top: 2px solid black; margin-left: 10vh; margin-right: 10vh; margin-top: 10vh; margin-bottom: 10vh;" id="MonteVerde"></div>
             <article class="formtText" >
-                <h2 id="ImpulsaJoven">Programa de Emprendimiento Juvenil "ImpulsaJoven":</h2>
-                <p>Con el firme propósito de empoderar a los jóvenes emprendedores de Monte Cristo, la Oficina de Desarrollo lanza el programa ImpulsaJoven. Esta iniciativa se enfoca en brindar un amplio conjunto de recursos y oportunidades que impulsan el espíritu emprendedor y respaldan el desarrollo de proyectos empresariales liderados por jóvenes en la comunidad.
-
-                    ImpulsaJoven ofrece una variedad de talleres y capacitaciones altamente especializadas, diseñadas para equipar a los participantes con habilidades clave para el éxito empresarial. Los temas abordados incluyen planificación empresarial, estrategias de marketing, gestión financiera y liderazgo efectivo. Estas sesiones se adaptan a las necesidades específicas de los emprendedores jóvenes, brindándoles conocimientos y herramientas prácticas para enfrentar los desafíos del mundo empresarial.
-
-                    Además, el programa establece alianzas estratégicas con empresas y empresarios locales destacados, quienes se desempeñan como mentores dedicados. Estos mentores comparten su valiosa experiencia y conocimientos con los jóvenes emprendedores, brindándoles orientación personalizada y asesoramiento práctico en su trayectoria empresarial. Esta relación mentor-emprendedor promueve el crecimiento profesional y el desarrollo de habilidades clave, allanando el camino hacia el éxito empresarial.
-
-                    ImpulsaJoven también se enfoca en fomentar la creación de una sólida red de jóvenes emprendedores en Monte Cristo. Para lograrlo, se organizan encuentros regulares, eventos de networking y espacios de colaboración, donde los participantes pueden conectarse, intercambiar ideas y establecer relaciones comerciales mutuamente beneficiosas. Esta red de apoyo y colaboración impulsa la generación de empleo local y contribuye al crecimiento económico sostenible de la comunidad.
-
-                    Además, el programa se lleva a cabo a través de una serie de pasos clave que garantizan una experiencia integral para los participantes. En primer lugar, se inicia con una convocatoria abierta, ampliamente difundida en la comunidad de Monte Cristo y sus alrededores, para seleccionar a los jóvenes emprendedores con proyectos empresariales prometedores. Esta convocatoria puede incluir la presentación de una solicitud y un proceso de evaluación exhaustivo para identificar a aquellos emprendedores con ideas innovadoras, viabilidad comercial y potencial de crecimiento.
-
-                    Una vez seleccionados, los participantes ingresan a una fase de capacitación intensiva que abarca una amplia gama de aspectos empresariales fundamentales. Estas capacitaciones son diseñadas cuidadosamente para proporcionarles los conocimientos y las habilidades necesarias para desarrollar y gestionar sus proyectos de manera efectiva. Los talleres y sesiones de formación cubren temas como planificación estratégica, modelos de negocio, análisis de mercado, estrategias de marketing, gestión financiera, liderazgo y negociación, entre otros. Se cuenta con la participación de expertos y profesionales destacados en cada área, brindando a los emprendedores acceso a conocimientos de alto nivel y las mejores prácticas en el ámbito empresarial.
-
-                    Además, como parte fundamental del programa, se establecen alianzas estratégicas con mentores destacados que actúan como guías y asesores personales para los jóvenes emprendedores. Estos mentores, con amplia experiencia y conocimientos en el mundo empresarial, brindan orientación personalizada, comparten su experiencia y ofrecen consejos prácticos para ayudar a los emprendedores a superar desafíos y maximizar sus oportunidades de éxito. La relación mentor-emprendedor se nutre de reuniones regulares, intercambio de ideas y seguimiento constante, creando un ambiente de aprendizaje y crecimiento continuo.
-
-                    Finalmente, el programa impulsa la creación de una red sólida de jóvenes emprendedores a través de una variedad de encuentros y eventos de networking. Estos espacios brindan la oportunidad de conectarse con otros emprendedores, compartir experiencias, establecer colaboraciones estratégicas y abrir puertas a nuevas oportunidades comerciales. Se organizan conferencias, paneles de discusión, ferias empresariales y actividades de networking específicamente diseñadas para fomentar la interacción entre los participantes, promover el intercambio de conocimientos y facilitar la creación de alianzas comerciales mutuamente beneficiosas.
-
-                    En resumen, el programa ImpulsaJoven se implementa a través de una cuidadosa secuencia de pasos, que incluye una convocatoria selectiva, una capacitación integral, el apoyo de mentores experimentados y la creación de una red sólida de jóvenes emprendedores. Estos pasos garantizan que los participantes obtengan los conocimientos, las habilidades y las conexiones necesarias para llevar adelante sus proyectos empresariales con éxito, contribuyendo así al crecimiento económico y al desarrollo sostenible de Monte Cristo.</p>
-            </article>
-            <div style="border-top: 2px solid black; margin-left: 10vh; margin-right: 10vh; margin-top: 10vh; margin-bottom: 10vh;"></div>
-            <article class="formtText" >
-                <h2 id="MonteVerde">Programa de Desarrollo Sustentable "MonteVerde":</h2>
-                <p>En primer lugar, se realizaría un proceso de investigación y análisis en colaboración con actores locales y organismos gubernamentales para identificar las problemáticas ambientales y sociales presentes en la región. Se llevarían a cabo estudios y evaluaciones para comprender a fondo los desafíos relacionados con energías renovables, gestión de residuos, agricultura sostenible y turismo responsable.
+                <h2 >Programa de Desarrollo Sustentable "MonteVerde":</h2>
+                <p >En primer lugar, se realizaría un proceso de investigación y análisis en colaboración con actores locales y organismos gubernamentales para identificar las problemáticas ambientales y sociales presentes en la región. Se llevarían a cabo estudios y evaluaciones para comprender a fondo los desafíos relacionados con energías renovables, gestión de residuos, agricultura sostenible y turismo responsable.
 
                     Una vez identificadas las problemáticas, se procedería al diseño del programa MonteVerde. Esto implicaría la elaboración de un plan integral que incluya capacitaciones, recursos y oportunidades de apoyo para los emprendedores y proyectos que buscan generar un impacto positivo en la comunidad y el medio ambiente.
                     

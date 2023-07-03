@@ -139,8 +139,11 @@
   text-align: left;
 }
 .mainCont .containerForm .infoForm h1 {
-  margin-bottom: 15px;
   font-size: 35px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
 .mainCont .containerForm .infoForm p {
   font-size: 17px;
@@ -193,7 +196,7 @@
   background: #e39403;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   .mainCont {
     display: flex;
     align-items: center;
@@ -205,7 +208,6 @@
     justify-content: center;
   }
   .mainCont .containerForm .contDatos {
-    order: -1;
     height: auto;
     display: flex;
     justify-content: center;
@@ -226,8 +228,7 @@
     margin-bottom: 5px;
   }
   .mainCont .containerForm .contDatos .datosForm .dato {
-    width: 90%;
-    padding: 5px 5px;
+    padding: 5px;
     font-size: 10px;
     border: 1px solid #dbdbdb;
     margin-bottom: 25px;
@@ -246,15 +247,16 @@
   }
   .mainCont .containerForm .infoForm .infoCont h1 {
     font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .mainCont .containerForm .infoForm .infoCont p {
-    font-size: 10px;
+    font-size: 15px;
   }
   .mainCont .containerForm .infoForm .iconCont {
     padding-top: 0vh;
     display: flex;
     flex-direction: column;
-    font-size: 10px;
   }
 }
 .contMain {
@@ -268,6 +270,11 @@
   align-items: center;
   text-align: center;
   padding-top: 10vh;
+}
+.contMain .imgTitle h1 {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
 }
 .contMain .imgProgs {
   display: flex;
@@ -346,6 +353,12 @@
 }
 .contMain .textProg .formtText h2 {
   margin-bottom: 5vh;
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .contMain .textProg .formtText p {
   text-align: center;
@@ -358,7 +371,7 @@
   width: 80%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 320px) {
   .contMain {
     display: flex;
     flex-direction: column;
@@ -381,24 +394,56 @@
     margin-left: 5vh;
     width: 80%;
   }
+  .contMain .textProg .formtText h2 {
+    font-size: 20px;
+    width: 80%;
+  }
 }
-.foro {
-  height: 70vh;
+.mainNoti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainNoti h1 {
+  width: 90%;
+  background-color: #E0E1DD;
+  padding: 5px;
+  margin-top: 10px;
+}
+.mainNoti .foro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 66vh;
   overflow: hidden;
   overflow-y: scroll;
   background-color: #E0E1DD;
-  padding: 5vh;
-  margin: 2vh;
+  width: 90%;
+  padding: 10px;
+}
+.mainNoti .foro h2 {
+  font-size: 20px;
+}
+.mainNoti .foro p {
+  font-size: 10px;
 }
 
 .contMain {
   margin-top: 15vh;
 }
+.contMain h2 {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 .contMain .formtEquipo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 .contMain .formtEquipo .textEquipo {
   display: flex;
@@ -494,11 +539,11 @@
   height: 50vh;
 }
 
-@media screen and (max-width: 1000px) {
-  .contMain * p {
+@media screen and (max-width: 320px) {
+  .contMain p {
     font-size: 10px;
   }
-  .contMain * h2 {
+  .contMain h2 {
     font-size: 20px;
   }
   .contMain .formtEquipo {
@@ -506,6 +551,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
   }
   .contMain .formtEquipo .textEquipo {
     display: flex;
@@ -513,6 +559,9 @@
     align-items: center;
   }
   .contMain .formtEquipo .textEquipo p {
+    width: 80%;
+  }
+  .contMain .formtEquipo .textEquipo h2 {
     width: 80%;
   }
   .contMain .container {
@@ -551,6 +600,10 @@ footer {
   height: 10vh;
 }
 
+.navMov {
+  display: none;
+}
+
 .logo {
   margin: 5rem;
   width: 10vh;
@@ -573,17 +626,17 @@ footer {
   z-index: 2;
 }
 
-.navBar ul {
+.navDesk ul {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
 }
-.navBar ul li {
+.navDesk ul li {
   list-style: none;
 }
-.navBar ul li a {
+.navDesk ul li a {
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -596,7 +649,7 @@ footer {
   transition: 0.5s;
   z-index: 1;
 }
-.navBar ul li a:before {
+.navDesk ul li a:before {
   content: "";
   position: absolute;
   top: 0;
@@ -609,7 +662,7 @@ footer {
   opacity: 0;
   transition: 0.3s;
 }
-.navBar ul li a:after {
+.navDesk ul li a:after {
   content: "";
   position: absolute;
   top: 2px;
@@ -622,14 +675,14 @@ footer {
   transition: 0.3s;
   z-index: -1;
 }
-.navBar ul li a:hover {
+.navDesk ul li a:hover {
   color: #fff;
 }
-.navBar ul li a:hover:before {
+.navDesk ul li a:hover:before {
   transform: scaleY(1);
   opacity: 1;
 }
-.navBar ul li a:hover:after {
+.navDesk ul li a:hover:after {
   transform: scaleY(1);
   opacity: 1;
 }
@@ -672,20 +725,25 @@ footer {
   margin: 0vh;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 320px) {
   .navBarPos {
     padding: 0vh !important;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    position: static;
   }
   .navBarPos .logo {
-    padding-left: 2vh;
+    padding-left: 1vh;
   }
   .navBarPos .navRes {
     background-color: white;
   }
-  .navBar {
+  .navDesk {
     display: none;
+  }
+  .navMov {
+    display: flex;
+    height: 10vh;
   }
   .footer {
     overflow: hidden;

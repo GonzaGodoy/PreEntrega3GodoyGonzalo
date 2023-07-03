@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400;1,500&display=swap" rel="stylesheet">
-    <!-- Boostrap  -->
+    <!-- Fiveicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/Favicon/favicon.ico">
+    <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- css main -->
     <link rel="stylesheet" href="../css/style.css">
@@ -19,36 +21,46 @@
 <body>
     <header class="navBarPos">
         <figure class="logo">
-                <img src="../img/LogoPng" alt="">
+                <img src="../img/LogoPng" alt="logo de dale">
             </figure>
-        <nav class="navBar">
+        <nav class="navDesk">
             <ul>
                 <li><a href="../index.html" class="itemNav "> Inicio </a></li>
-                <li><a href="./programas.html" class="itemNav "> Programas </a></li>
-                <li><a href="./noticias.html" class="itemNav "> Noticias </a></li>                
-                <li><a href="./contacto.html" class="itemNav "> Contactanos </a></li>
+                <li><a href="../pages/programas.html" class="itemNav "> Programas </a></li>
+                <li><a href="../pages/noticias.html" class="itemNav "> Noticias </a></li>
+                <li><a href="../pages/nosotros.html" class="itemNav "> Nosotros </a></li>
+                <li><a href="../pages/contacto.html" class="itemNav "> Contactanos </a></li>
             </ul>  
         </nav> 
-        <nav class="navRes navbar navbar-expand-lg navbar-white bg-white d-lg-none " justify-content="center">
+        <nav class="navMov navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../img/LogoPng" alt="logo de dale" width="80px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./programas.html">Programas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./noticias.html">Notocias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contactanos</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./programas.html">Programas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -61,7 +73,7 @@
                     <p>Con un Máster en Desarrollo Emprendedor e Innovación de la Universidad de Salamanca, Belén Sánchez es un experto en la dirección de incubadoras, aceleradoras y centros de desarrollo emprendedor. Como Directora Ejecutiva de ASETEC y Directora de la Oficina de Emprendimientos Monte Cristo, Belén ha brindado mentoría y apoyo a emprendedores, promoviendo el crecimiento de nuevas empresas. Su liderazgo inspirador y visión estratégica han establecido un entorno propicio para el emprendimiento en nuestra ciudad.</p>
                 </div>
                 <div align="center" class="contImg">
-                    <div class="formatoImg" style="background-image:url(../img/belen.jpg);">
+                    <div class="formatoImg" style="background-image:url(../img/belen.jpg);" alt="Img de belen directora general">
                         <div class="shadow_swhow_mini">
                             <div class="name">Belen Sanchez</div>
                             <div class="cargo">Directora General</div>

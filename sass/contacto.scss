@@ -16,8 +16,11 @@
             flex-direction: column;
             text-align: left;
             h1{
-                margin-bottom: 15px;
-                font-size: 35px
+                font-size: 35px;
+                background-color: white;
+                padding: 5px;
+                border-radius: 5px;
+                text-align: center;
             }
             p{
                 font-size: 17px;
@@ -77,7 +80,7 @@
         }
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 320px){
     .mainCont{
         display: flex;
         align-items: center;
@@ -87,7 +90,6 @@
             align-items: center;
             justify-content: center;
             .contDatos{
-                order: -1;
                 height: auto;
                 display: flex;
                 justify-content: center;
@@ -106,8 +108,7 @@
                         margin-bottom: 5px ;
                     }
                     .dato{
-                        width: 90%;
-                        padding: 5px 5px;
+                        padding: 5px;
                         font-size: 10px;
                         border: 1px solid #dbdbdb;
                         margin-bottom: 25px;
@@ -126,16 +127,17 @@
                     flex-direction: column;    
                     h1{
                         font-size: 30px;
+                        margin-left: 10px;
+                        margin-right: 10px;
                     }
                     p{
-                        font-size: 10px;
+                        font-size: 15px;
                     }
                 } 
                 .iconCont{
                     padding-top: 0vh;
                     display: flex;
                     flex-direction: column;
-                    font-size: 10px;
                 }
             }
             
